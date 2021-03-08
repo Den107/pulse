@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "museo";
+  src: url("../../fonts/museo_sans_cyrl_300.eot");
+  src: local("☺"), url("../../fonts/museo_sans_cyrl_300.woff") format("woff"),
+    url("../../fonts/museo_sans_cyrl_300.ttf") format("truetype"),
+    url("../../fonts/museo_sans_cyrl_300.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "museo";
+  src: url("../../fonts/museo_sans_cyrl_500.eot");
+  src: local("☺"), url("../../fonts/museo_sans_cyrl_500.woff") format("woff"),
+    url("../../fonts/museo_sans_cyrl_500.ttf") format("truetype"),
+    url("../../fonts/museo_sans_cyrl_500.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo";
+  src: url("../../fonts/MuseoSansCyrl_2.eot");
+  src: local("☺"), url("../../fonts/MuseoSansCyrl_2.woff") format("woff"),
+    url("../../fonts/MuseoSansCyrl_2.ttf") format("truetype"), url("../../fonts/MuseoSansCyrl_2.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
