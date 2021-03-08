@@ -18,6 +18,12 @@
       display: none;
     }
   }
+  .consultation {
+    &__title {
+      font-size: 29px;
+      line-height: 45px;
+    }
+  }
 }
 @media (max-width: 435px) {
   .header {
