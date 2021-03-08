@@ -1,7 +1,7 @@
 @import "base/null";
-@import "libs/slick";
 @import "base/fonts";
 @import "base/variables";
+@import "libs/slick";
 
 body {
   font-family: "museo", sans-serif;
@@ -18,5 +18,6 @@ body {
 @import "blocks/advantages";
 @import "blocks/consultation";
 @import "blocks/forms";
+@import "blocks/carousel";
 
 @import "base/media";
