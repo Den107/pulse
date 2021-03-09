@@ -35,4 +35,45 @@ $(function () {
 
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
+
+  //modal
+  $('[data-modal=consultation]').on('click', function () {
+    $('.overlay, #consultation').fadeIn();
+  });
+
+  $('.modal__close').on('click', function () {
+    $('.overlay, #consultation, #thanks, #order').fadeOut();
+  });
+
+  $('.button--mini').each(function (i) {
+    $(this).on('click', function () {
+      $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+      $('.overlay, #order').fadeIn();
+    });
+  });
+
+  //validate
+  function validateForms(form) {
+    $(form).validate({
+      rules: {
+        name: 'required',
+        phone: 'required',
+        mail: {
+          required: true,
+          email: true
+        },
+      },
+      messages: {
+        name: "Пожалуйста, введите своё имя",
+        phone: 'Пожалуйста, введите свой номер телефона',
+        mail: {
+          required: "Пожалуйста, введите свой email",
+          email: "Адрес почты должен быть введен в формате name@domain.com"
+        }
+      }
+    });
+  }
+  validateForms('#consultation-form');
+  validateForms('#consultation form');
+  validateForms('#order form');
 });

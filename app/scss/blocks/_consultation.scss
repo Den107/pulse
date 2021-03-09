@@ -15,4 +15,13 @@
     line-height: 30px;
     color: #ffffff;
   }
+  .error {
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid $main_color;
+  }
+  label.error {
+    border: none;
+    color: #fff;
+  }
 }

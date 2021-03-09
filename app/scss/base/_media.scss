@@ -43,6 +43,13 @@
     }
   }
 }
+@media (max-width: 460px) {
+  .modal {
+    &__close {
+      right: 40px;
+    }
+  }
+}
 @media (max-width: 435px) {
   .header {
     flex-direction: column;
